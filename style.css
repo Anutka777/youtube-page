@@ -3,131 +3,173 @@
   padding: 0;
   box-sizing: border-box;
   width: 100%;
-  font-family: sans-serif;
-  font-size: 16px;
+  font-family: Roboto, Arial, sans-serif;
 }
 
 body {
-  padding: 0 24px;
+  font-size: 16px;
 }
 
 button {
   border: none;
+  background-color: white;
 }
 
 /* Navigation */
 
 nav {
+  margin: 0 0;
+  padding: 0.5rem 1rem;
   width: 100%;
-  height: 56px;
+  height: 3.5rem;
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-content: baseline;
+  z-index: 1000;
+  background-color: white;
 }
 
 .nav-button {
 
   /* Fixing the width for searchbar stretching */
+  padding: .6rem;
   min-width: 3rem;
   max-width: 3rem;
   overflow: hidden;
+  opacity: .5;
+}
+
+.nav-start-btn-grp {
+  display: flex;
 }
 
 nav a {
-
-  /* This width will be actual image size */
-  width: 20rem;
+  width: 7.5rem;
+  padding: 0 0.3rem;
+  opacity: .8;
 }
 
 .search-bar {
+  margin-left: -2rem;
   width: 100%;
   height: 100%;
   display: flex;
+  border: 1px solid rgba(0,0,0,.1);
 }
 
 .search-bar input {
   height: 100%;
   width: 100%;
+  border: none;
+  padding: .5rem 1rem;
+  outline: none;
 }
 
 .search-bar button {
   height: 100%;
-  min-width: 3rem;
+  min-width: 4rem;
+  border-right: 1px solid rgba(0,0,0,.1);
+  border-left: 1px solid rgba(0,0,0,.1);
+  opacity: .5;
 }
 
+.nav-end-btn-grp {
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+}
+
+.user-avatar {
+  position: relative;
+  opacity: 1;
+}
+
+.avatar-img {
+  padding: 0 .5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
 
 /* Main Content Section */
-.video {
-  background-color: chocolate;
+
+.wrapper {
+  padding: 1.5rem 2.5rem;
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #f9f9f9;
 }
 
-video {
+/* Video Section */
 
-  /* This will be the acual video size */
-  height: 380px;
-  width: 920px;
+.video {
+  padding-bottom: .5rem;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+/* https://css-tricks.com/fluid-width-video/ */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .video h1 {
-  font-size: 2rem;
+  padding: .5rem 0;
+  font-size: 1.1rem;
+  font-weight: normal;
 }
 
 .video-status {
-  background-color: red;
-  font-size: .5rem;
+  font-size: .6rem;
+}
+
+.video-status span {
+  font-size: .9rem;
+  opacity: .5;
 }
 
 .video-btn-grp {
-  background-color: blue;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-end;
-  height: 3rem;
+  height: 2rem;
 }
 
 .video-btn-grp button {
-  min-width: 5rem;
-  font-size: 1.4rem;
-}
-
-/* Video Description Section */
-
-.info {
-  background-color: cornflowerblue;
-  position: relative;
-}
-
-.info-wrap {
-  display: flex;
-}
-
-.info-text {
-  font-size: 1rem;
-}
-.info-text h4 {
-  font-size: .8rem;
-}
-
-.info-text span {
-  font-size: .7rem
-}
-
-.info button {
-  position: absolute;
-  top: 0;
-  right: 0;
+  padding: .1rem;
+  width: 5rem;
   height: 3rem;
-  width: 10rem;
-  font-size: 1.4rem;
+  font-size: .9rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: .5;
+  outline: none;
+}
+
+.video-btn-grp-img {
+  width: 2rem;
+  height: 2rem;
 }
 
 /* Watch More Section */
 
 .watchmore {
-  background-color: crimson;
-  width: 100%;
+  padding: 0 2.5rem;
 }
 
 .watchmore-video {
@@ -158,10 +200,65 @@ video {
   font-size: 1.7rem;
 }
 
+/* Video Description Section */
+
+.info {
+  padding-top: 1.5rem;
+  position: relative;
+}
+
+.info-wrap {
+  display: flex;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.info-img {
+  width: 3rem;
+}
+
+.info-img img {
+  border-radius: 50%;
+}
+
+.info-text {
+  padding: 1rem;
+  font-size: 1rem;
+}
+.info-text h4 {
+  font-size: .9rem;
+}
+
+.info-text span {
+  font-size: .8rem;
+  opacity: .5;
+}
+
+.info-text p {
+  padding-top: 1rem;
+  font-size: .9rem;
+}
+
+.info button {
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2.5rem;
+  width: 7rem;
+  font-size: .9rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: rgb(204,0,0);
+}
+
 /* Comments Section */
 
 .comments {
-  background-color: darkgreen;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  grid-column-start: 1;
 }
 
 .comments span {
