@@ -177,35 +177,56 @@ header a img {
 /* Watch More Section */
 
 .watchmore {
-  padding: 0 2.5rem;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  padding-left: 1.5rem;
 }
 
 .watchmore-video {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  padding-bottom: .7rem;
 }
 
 .watchmore-thumbnail {
-  width: 150px;
+  margin-right: .3rem;
+  width: 169px;
+  height: 94px;
+  background-color: #ddd;
+}
+
+.watchmore-thumbnail img {
+  width: 169px;
+  height: 94px;
 }
 
 .watchmore-info {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: .7rem;
+  color: #777;
+}
+
+.watchmore-info a {
+  text-decoration: none;
+}
+
+.watchmore-info h3 {
+  font-size: 1rem;
+  color: black;
+}
+
+.watchmore-info h4 {
+  font-weight: 400;
 }
 
 .watchmore-video button {
-  max-width: 3rem;
-  min-width: 3rem;
-  font-size: 1.5rem;
+  align-self: flex-start;
+  width: 4rem;
+  background-color: transparent;
 }
 
-.watchmore button {
-  width: 100%;
-  height: 3rem;
-  font-size: 1.7rem;
+.watchmore-video button img {
+  opacity: .5;
 }
 
 /* Video Description Section */
