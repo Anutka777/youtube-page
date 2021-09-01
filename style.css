@@ -137,6 +137,10 @@ header a img {
   font-size: .6rem;
 }
 
+.video-info {
+  position: relative;
+}
+
 .video-info span {
   font-size: .9rem;
   color: #777;
@@ -145,31 +149,29 @@ header a img {
 .video-icon-grp {
   display: flex;
   flex-direction: row;
-  justify-items: end;
+  justify-content: flex-end;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: .9rem;
+  outline: none;
 }
 
 .video-icon-grp a {
   display: flex;
   align-items: center;
-  width: 3rem;
+  padding-left: .3rem;
+  width: auto;
+  text-decoration: none;
+  color: #777;
+  font-weight: 600;
 }
 
-/* .video-icon-grp  {
-  padding: .1rem;
-  width: 5rem;
-  height: 3rem;
-  font-size: .9rem;
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  text-transform: uppercase;
-  opacity: .5;
-  outline: none;
-} */
-
 .video-icon-grp img {
+  padding: .3rem;
   width: 2rem;
   height: 2rem;
+  opacity: .5;
+
 }
 
 /* Watch More Section */
