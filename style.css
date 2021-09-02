@@ -101,17 +101,20 @@ header a img {
 /* Main Content Section */
 
 .main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 1.5rem 2rem;
   margin-top: 3rem;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   background-color: #f9f9f9;
 }
 
 /* Video Section */
 
 .video {
-  padding-bottom: .5rem;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
   border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
@@ -162,8 +165,14 @@ header a img {
   padding-left: .3rem;
   width: auto;
   text-decoration: none;
+  letter-spacing: .03rem;
   color: #777;
   font-weight: 600;
+  border-bottom: 1px solid transparent;
+}
+
+.video-icon-grp a:hover {
+  border-bottom: 1px solid #777;
 }
 
 .video-icon-grp img {
@@ -177,8 +186,12 @@ header a img {
 /* Watch More Section */
 
 .watchmore {
+  grid-column-start: 4;
+  grid-column-end: 5;
   grid-row-start: 1;
-  grid-row-end: 4;
+
+  /* Plus one more row than needed for stretching left column down the bottom af a page*/
+  grid-row-end: 5;
   padding-left: 1.5rem;
 }
 
@@ -232,14 +245,18 @@ header a img {
 /* Video Description Section */
 
 .info {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   padding-top: 1.5rem;
   position: relative;
 }
 
 .info-wrap {
   display: flex;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
 }
 
 .info-img {
@@ -285,9 +302,10 @@ header a img {
 /* Comments Section */
 
 .comments {
-  grid-row-start: 3;
-  grid-row-end: 3;
   grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 .comments span {
@@ -304,5 +322,5 @@ header a img {
 
 .comments-text span {
   font-size: 2rem;
-}
+} 
 
