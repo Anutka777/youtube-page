@@ -36,7 +36,7 @@
           <img src="assets/notifications.svg" alt="Notifications">
         </button>
         <button class="header-btn">
-          <img id="img" class="avatar-img alt="User avatar" src="http://unsplash.it/36/36?gravity=center">
+          <img class="avatar-img alt="User avatar" src="http://unsplash.it/36/36?gravity=center">
         </button>
       </div>
     </header>
@@ -307,18 +307,20 @@
 
       <!--Comments Section -->
       <section class="comments">
-        <span>Number of comments</span>
-        <label for="comments-order"></label>
-        <select name="comments-order" id="comments-order">
-          <option>Most popular</option>
-          <option>Most recent</option>
-        </select>
-        <div class="comments-leave">
-          <img src="" alt="user-avatar">
-          <textarea name="user-comment" placeholder="Leave your comment here" cols="130" rows="5" resize="none"></textarea>
-        </div>
+        <form action="" class="comments-form">
+          <span>Number of comments</span>
+          <label for="comments-form-order"><img src="assets/sort.svg">Sort</label>
+          <select name="comments-form-order" id="comments-order">
+            <option>Most popular</option>
+            <option>Most recent</option>
+          </select>
+          <div class="comments-form-leave-comment">
+            <a href=""><img class="avatar-img" alt="User avatar" src="http://unsplash.it/36/36?gravity=center"></a>
+            <textarea name="user-comment" placeholder="Leave your comment here" cols="130" rows="5" resize="none"></textarea>
+          </div>
+        </form>
         <div class="comments-read">
-          <img scr="" alt="user-avatar">
+          <a href="#"><img class="avatar-img" alt="User avatar" src="http://unsplash.it/36/36?gravity=center"></a>
           <div class="comments-text">
             <span>User name</span>
             <span>Date</span>

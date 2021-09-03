@@ -98,6 +98,8 @@ header a img {
 }
 
 .avatar-img {
+  height: 36px;
+  width: 36px;
   border-radius: 50%;
   background-color: #aaa;
 }
@@ -255,8 +257,9 @@ header a img {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  padding-top: 1.5rem;
+  padding: 1rem 0;
   position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.1);
 }
 
 .info-wrap {
@@ -315,14 +318,46 @@ header a img {
   grid-column-end: 4;
   grid-row-start: 3;
   grid-row-end: 4;
+  padding-top: 1rem;
 }
 
-.comments span {
-  font-size: 2rem;
+.comments-form span {
+  color: #777;
 }
 
-.comments select {
-  font-size: 2rem;
+.comments-form label {
+  padding-left: 2rem;
+  text-transform: uppercase;
+}
+
+.comments-form label img {
+  margin-right: .5rem;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.comments-form select {
+  margin-right: 1rem;
+  width: 15rem;
+}
+
+.comments-form-leave-comment {
+  display: flex;
+  justify-items: flex-start;
+  padding-top: 1rem;
+}
+
+.comments-form-leave-comment a {
+  width: 4rem;
+}
+
+.comments-form-leave-comment textarea {
+  resize: none;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  font-size: 1rem;
 }
 
 .comments-read {
@@ -332,4 +367,3 @@ header a img {
 .comments-text span {
   font-size: 2rem;
 } 
-
