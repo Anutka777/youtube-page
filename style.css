@@ -327,6 +327,7 @@ header a img {
 
 .comments-form label {
   padding-left: 2rem;
+  margin-right: .5rem;
   text-transform: uppercase;
 }
 
@@ -340,6 +341,7 @@ header a img {
 .comments-form select {
   margin-right: 1rem;
   width: 15rem;
+  cursor: pointer;
 }
 
 .comments-form-leave-comment {
@@ -349,10 +351,11 @@ header a img {
 }
 
 .comments-form-leave-comment a {
-  width: 4rem;
+  width: 3rem;
 }
 
 .comments-form-leave-comment textarea {
+  padding: 1rem;
   resize: none;
   border: none;
   outline: none;
@@ -364,6 +367,36 @@ header a img {
   display: flex;
 }
 
-.comments-text span {
-  font-size: 2rem;
-} 
+.comments-read a {
+  width: 3rem;
+}
+
+.comments-text {
+  padding: 1rem;
+}
+
+.comments-text p {
+  margin-top: .5rem;
+}
+
+.comments-text-name {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.comments-text-date {
+  font-size: .9rem;
+  color: #777;
+}
+
+.comments-read-more-btn {
+  margin-top: 1rem;
+  padding: .5rem 1.5rem;
+  border: 1px solid #065fd4;
+  background-color: #f8f8f8;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .03rem;
+  color: #065fd4;
+  cursor: pointer;
+}
