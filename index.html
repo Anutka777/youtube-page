@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" lang="en">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,10 +17,11 @@
         <a href="#">
           <img src="assets/YouTube_Logo.svg" alt="Youtube">
         </a>
-        <form action="" class="search">
-          <input type="search-bar" placeholder="Search" class="search-bar">
+        <form action="#" class="search">
+          <input type="search" placeholder="Search" class="search-bar">
           <button class="header-btn search-btn">
             <img src="assets/search.svg" alt="Search">
+          </button>
           <button class="header-btn sound-input-btn">
             <img src="assets/mic.svg" alt="Sound Input">
           </button>
@@ -36,7 +37,7 @@
           <img src="assets/notifications.svg" alt="Notifications">
         </button>
         <button class="header-btn">
-          <img class="avatar-img alt="User avatar" src="http://unsplash.it/36/36?gravity=center">
+          <img class="avatar-img" alt="User avatar" src="http://unsplash.it/36/36?gravity=center">
         </button>
       </div>
     </header>
@@ -307,16 +308,16 @@
 
       <!--Comments Section -->
       <section class="comments">
-        <form action="" class="comments-form">
-          <span>3 comments</span>
-          <label for="comments-form-order"><img src="assets/sort.svg">Sort</label>
-          <select name="comments-form-order" id="comments-order">
+        <form action="#" class="comments-form">
+          <h3>3 comments</h3>
+          <label for="comments-form-order"><img src="assets/sort.svg" alt="sort icon">Sort</label>
+          <select name="comments-form-order" id="comments-form-order">
             <option>Most popular</option>
             <option>Most recent</option>
           </select>
           <div class="comments-form-leave-comment">
             <a href=""><img class="avatar-img" alt="User avatar" src="http://unsplash.it/36/36?gravity=center"></a>
-            <textarea name="user-comment" placeholder="Leave a comment" cols="130" rows="5" resize="none"></textarea>
+            <textarea name="user-comment" placeholder="Leave a comment" cols="130" rows="5"></textarea>
           </div>
         </form>
         <div class="comments-read">
