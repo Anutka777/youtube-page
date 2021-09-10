@@ -15,6 +15,10 @@ button {
   outline: none;
 }
 
+p {
+  width: 90%;
+}
+
 /* Header */
 
 header {
@@ -229,11 +233,11 @@ header a img {
 
 .watchmore-info a {
   text-decoration: none;
+  color: black;
 }
 
 .watchmore-info h3 {
   font-size: 1rem;
-  color: black;
 }
 
 .watchmore-info h4 {
@@ -293,7 +297,6 @@ header a img {
 
 .info-text p {
   padding-top: 1rem;
-  width: 90%;
   font-size: .9rem;
 }
 
@@ -383,7 +386,6 @@ header a img {
 
 .comments-text p {
   margin-top: .5rem;
-  width: 90%;
 }
 
 .comments-text-name {
@@ -441,7 +443,49 @@ header a img {
   cursor: pointer;
 }
 
-@media(max-width: 500px) {
+@media (max-width: 730px) {
+  .main-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .video {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
 
+  .watchmore {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding-left: 0;
+  }
+
+  .info {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 2rem 0;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
+
+  .comments {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 2rem 0;
+  }
+
+  p {
+    width: 100%;
+  }
+}
+
+@media (min-width: 550px) {
+  
 }
