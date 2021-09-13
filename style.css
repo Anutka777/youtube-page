@@ -55,6 +55,7 @@ header {
 header a {
   margin: .5rem 1rem;
   width: 12rem;
+  min-width: 4rem;
 }
 
 header a img {
@@ -443,7 +444,7 @@ header a img {
   cursor: pointer;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 740px) {
   .main-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -484,7 +485,13 @@ header a img {
   p {
     width: 100%;
   }
+
+  .search {
+    margin-left: 1rem;
+  }
 }
+
+/* TODO: youtube logo on 740 */
 
 @media (min-width: 550px) {
   
