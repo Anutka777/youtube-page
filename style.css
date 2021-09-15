@@ -118,7 +118,7 @@ header a img {
 .main-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 1.5rem;
+  padding: .5rem 1.5rem;
   margin: 0 auto;
   margin-top: 3rem;
   max-width: 1500px;
@@ -275,8 +275,6 @@ header a img {
 
 .info-wrap {
   display: flex;
-  /* grid-row-start: 1;
-  grid-row-end: 3; */
 }
 
 .info-img {
@@ -291,6 +289,7 @@ header a img {
   padding: 1rem;
   font-size: 1rem;
 }
+
 .info-text a {
   text-decoration: none;
   font-size: .9rem;
@@ -544,6 +543,10 @@ header a img {
   }
 
   .comments a {
+    width: 4.5rem;
+  }
+
+  .info-img {
     width: 4.5rem;
   }
 }
