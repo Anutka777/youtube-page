@@ -1,2 +1,7 @@
 # youtube-page
-Replica of Youtube page with HTML and CSS
+Replica of Youtube page
+
+* Using HTML and CSS only
+* Embedded video
+* Responsive
+* Animated
