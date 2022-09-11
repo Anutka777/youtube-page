@@ -276,6 +276,7 @@ header a img {
 
 .dscrp-channel_avatar {
   width: 3rem;
+  padding-top: 1rem;
 }
 
 .dscrp-channel_avatar img {
@@ -379,6 +380,7 @@ header a img {
 
 .comment-container a {
   width: 3rem;
+  padding-top: 1rem;
 }
 
 .comments-text {
